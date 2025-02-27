@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Capital City Guessing Game</title>
+    <meta charset="utf-8">
+    <!-- Add the viewport meta tag to ensure the page is responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Add the Bootstrap CSS link to the head of the document -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+        crossorigin="anonymous">
+    <!-- Add the countries.js script to the head of the document -->
+    <script src="countries.js"></script>
+    <!-- Add the gametest.js script to the head of the document -->
+    <script async defer src="gametest.js"></script>
+</head>
+<body>
+<!-- Add a div with the class content, m-4, and center-block to center the content on the page -->
+<div class="content m-4 center-block">
+    <!-- Add an h1 element with the text "Geography Quiz" -->
+    <h1>Geography Quiz</h1>
+    <!-- Add a paragraph element with the text "Test your knowledge of geography. What's the capital city of this country?" -->
+    <p>Test your knowledge of geography. What's the capital city of this country?</p>
+    <!-- Add an h3 element with the id "random-country-display" and the text "Country name placeholder" -->
+    <h3 id="random-country-display">Country name placeholder</h3>
+    <!-- Add an input group div with the class mb-3 to create space below the input group -->
+    <div class="input-group mb-3">
+        <!-- The user will enter their answer in this input -->
+        <input type="text" id="user-answer-entry" class="form-control" placeholder="answer" aria-label="answer" aria-description="submit-answer">
+        <!-- Add an input group append div to contain the button -->
+        <div class="input-group-append">
+            <!-- Clicking this button submits the user's answer for the program to verify -->
+            <button class="btn btn-outline-secondary" type="button" id="submit-user-answer">Check Answer</button>
+        </div>
+    </div>
+    <!-- After the user's guess is verified, display if the user is correct, or not (plus the correct answer) here -->
+    <h3 id="game-result">Replace with result</h3>
+</div>
+</body>
+</html>

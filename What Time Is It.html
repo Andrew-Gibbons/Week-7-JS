@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Interval</title>
+</head>
+<body>
+    <h1>What time is it?</h1>
+    <p id="time"></p>
+    <script>
+        const timeElement = document.querySelector('#time');
+        setInterval(() => {
+            let date = Date()
+            timeElement.innerHTML = date
+        },  1000); // 1000 milliseconds = 1 second
+    </script>
+</body>
+</html>
